@@ -1,6 +1,4 @@
 class API 
-
-
     def self.get_data
         response = RestClient.get('https://swapi.dev/api/starships/')
         starships_array = JSON.parse(response)["results"]
